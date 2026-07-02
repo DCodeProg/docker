@@ -12,7 +12,7 @@ services:  # Déclare les services qui seront créés. Chaque service correspond
       - db  # Ce service "web" dépend du service "db", ce qui signifie qu'il sera lancé après que le conteneur "db" soit prêt.
 
   db:  # Définition du service "db", qui représente une base de données MySQL.
-    image: mysql:5.7  # Utilise l'image officielle de MySQL version 5.7 pour créer le conteneur de base de données.
+    image: mysql:9.7.1  # Utilise l'image officielle de MySQL version 5.7 pour créer le conteneur de base de données.
     environment:
       MYSQL_ROOT_PASSWORD: exemple  # Définit le mot de passe pour l'utilisateur root de MySQL.
       MYSQL_DATABASE: docker  # Crée une base de données nommée "docker" à l'initialisation.
